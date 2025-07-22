@@ -7,7 +7,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/UdayLab/geoAnalytics)](https://github.com/UdayLab/geoAnalytics/issues)
 [![GitHub forks](https://img.shields.io/github/forks/UdayLab/geoAnalytics)](https://github.com/UdayLab/geoAnalytics/network)
 [![GitHub stars](https://img.shields.io/github/stars/UdayLab/geoAnalytics)](https://github.com/UdayLab/geoAnalytics/stargazers)
-[![Documentation Status](https://readthedocs.org/projects/geoanalytics/badge/?version=latest)](https://geoanalytics.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](http://localhost:63342/geoanalytics/sphinxDocs/_build/html/index.html?_ijt=98ceb3n41e38rqkk8mgplhk8hk&_ij_reload=RELOAD_ON_SAVE)](http://localhost:63342/geoanalytics/sphinxDocs/_build/html/index.html?_ijt=98ceb3n41e38rqkk8mgplhk8hk&_ij_reload=RELOAD_ON_SAVE)
 [![PyPI Downloads](https://static.pepy.tech/badge/geoanalytics)](https://pepy.tech/projects/geoanalytics)
 [![PyPI Downloads](https://static.pepy.tech/badge/geoanalytics/month)](https://pepy.tech/projects/geoanalytics)
 [![PyPI Downloads](https://static.pepy.tech/badge/geoanalytics/week)](https://pepy.tech/projects/geoanalytics)
@@ -402,7 +402,7 @@ viewer.run(cmap='jet', title='TIFF Image')
 
 # Documentation
 
-The official documentation is hosted on [geoAnalytics](https://geoanalytics.readthedocs.io/en/latest/).
+The official documentation is hosted on [geoAnalytics](http://localhost:63342/geoanalytics/sphinxDocs/_build/html/index.html?_ijt=98ceb3n41e38rqkk8mgplhk8hk&_ij_reload=RELOAD_ON_SAVE).
 ***
 # Getting Help    
 
