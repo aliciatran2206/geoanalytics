@@ -16,6 +16,7 @@ fancyimpute
 fuzzy-c-means
 hdbscan
 
+rasterio
 
 sphinx
 sphinx_rtd_theme
