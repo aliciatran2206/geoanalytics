@@ -120,7 +120,7 @@
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
 
-<div class="viewcode-block" id="MEANshift"><a class="viewcode-back" href="../../../geoanalytics.clustering.html#geoanalytics.clustering.MEANshift.MEANshift">[docs]</a><span class="k">class</span> <span class="nc">MEANshift</span><span class="p">:</span>
+<div class="viewcode-block" id="MEANshift"><a class="viewcode-back" href="../../../clustering/clusteringMEANshift.html#geoanalytics.clustering.MEANshift.MEANshift">[docs]</a><span class="k">class</span> <span class="nc">MEANshift</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    **About this algorithm**</span>
 
@@ -179,25 +179,25 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">memoryUSS</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">memoryRSS</span> <span class="o">=</span> <span class="kc">None</span>
 
-<div class="viewcode-block" id="MEANshift.getRuntime"><a class="viewcode-back" href="../../../geoanalytics.clustering.html#geoanalytics.clustering.MEANshift.MEANshift.getRuntime">[docs]</a>    <span class="k">def</span> <span class="nf">getRuntime</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="MEANshift.getRuntime"><a class="viewcode-back" href="../../../clustering/clusteringMEANshift.html#geoanalytics.clustering.MEANshift.MEANshift.getRuntime">[docs]</a>    <span class="k">def</span> <span class="nf">getRuntime</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Prints the total runtime of the clustering algorithm.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total Execution time of proposed Algorithm:&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">endTime</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">startTime</span><span class="p">,</span> <span class="s2">&quot;seconds&quot;</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="MEANshift.getMemoryUSS"><a class="viewcode-back" href="../../../geoanalytics.clustering.html#geoanalytics.clustering.MEANshift.MEANshift.getMemoryUSS">[docs]</a>    <span class="k">def</span> <span class="nf">getMemoryUSS</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="MEANshift.getMemoryUSS"><a class="viewcode-back" href="../../../clustering/clusteringMEANshift.html#geoanalytics.clustering.MEANshift.MEANshift.getMemoryUSS">[docs]</a>    <span class="k">def</span> <span class="nf">getMemoryUSS</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Prints the memory usage (USS) of the process in kilobytes.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Memory (USS) of proposed Algorithm in KB:&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">memoryUSS</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="MEANshift.getMemoryRSS"><a class="viewcode-back" href="../../../geoanalytics.clustering.html#geoanalytics.clustering.MEANshift.MEANshift.getMemoryRSS">[docs]</a>    <span class="k">def</span> <span class="nf">getMemoryRSS</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="MEANshift.getMemoryRSS"><a class="viewcode-back" href="../../../clustering/clusteringMEANshift.html#geoanalytics.clustering.MEANshift.MEANshift.getMemoryRSS">[docs]</a>    <span class="k">def</span> <span class="nf">getMemoryRSS</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Prints the memory usage (RSS) of the process in kilobytes.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Memory (RSS) of proposed Algorithm in KB:&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">memoryRSS</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="MEANshift.run"><a class="viewcode-back" href="../../../geoanalytics.clustering.html#geoanalytics.clustering.MEANshift.MEANshift.run">[docs]</a>    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bandwidth</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">300</span><span class="p">):</span>
+<div class="viewcode-block" id="MEANshift.run"><a class="viewcode-back" href="../../../clustering/clusteringMEANshift.html#geoanalytics.clustering.MEANshift.MEANshift.run">[docs]</a>    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bandwidth</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">300</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Executes MeanShift clustering algorithm.</span>
 
@@ -224,7 +224,7 @@
 
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">labelsDF</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">centers</span></div>
 
-<div class="viewcode-block" id="MEANshift.save"><a class="viewcode-back" href="../../../geoanalytics.clustering.html#geoanalytics.clustering.MEANshift.MEANshift.save">[docs]</a>    <span class="k">def</span> <span class="nf">save</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">outputFileLabels</span><span class="o">=</span><span class="s1">&#39;MeanShiftLabels.csv&#39;</span><span class="p">,</span> <span class="n">outputFileCenters</span><span class="o">=</span><span class="s1">&#39;MeanShiftCenters.csv&#39;</span><span class="p">):</span>
+<div class="viewcode-block" id="MEANshift.save"><a class="viewcode-back" href="../../../clustering/clusteringMEANshift.html#geoanalytics.clustering.MEANshift.MEANshift.save">[docs]</a>    <span class="k">def</span> <span class="nf">save</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">outputFileLabels</span><span class="o">=</span><span class="s1">&#39;MeanShiftLabels.csv&#39;</span><span class="p">,</span> <span class="n">outputFileCenters</span><span class="o">=</span><span class="s1">&#39;MeanShiftCenters.csv&#39;</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Saves the clustering result and cluster centers to CSV files.</span>
 

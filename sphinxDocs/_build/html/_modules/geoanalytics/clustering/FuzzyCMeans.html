@@ -118,7 +118,7 @@
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
 
-<div class="viewcode-block" id="FuzzyCMeans"><a class="viewcode-back" href="../../../geoanalytics.clustering.html#geoanalytics.clustering.FuzzyCMeans.FuzzyCMeans">[docs]</a><span class="k">class</span> <span class="nc">FuzzyCMeans</span><span class="p">:</span>
+<div class="viewcode-block" id="FuzzyCMeans"><a class="viewcode-back" href="../../../clustering/clusteringFuzzyCMeans.html#geoanalytics.clustering.FuzzyCMeans.FuzzyCMeans">[docs]</a><span class="k">class</span> <span class="nc">FuzzyCMeans</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    **About this algorithm**</span>
 
@@ -176,25 +176,25 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">memoryUSS</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">memoryRSS</span> <span class="o">=</span> <span class="kc">None</span>
 
-<div class="viewcode-block" id="FuzzyCMeans.getRuntime"><a class="viewcode-back" href="../../../geoanalytics.clustering.html#geoanalytics.clustering.FuzzyCMeans.FuzzyCMeans.getRuntime">[docs]</a>    <span class="k">def</span> <span class="nf">getRuntime</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="FuzzyCMeans.getRuntime"><a class="viewcode-back" href="../../../clustering/clusteringFuzzyCMeans.html#geoanalytics.clustering.FuzzyCMeans.FuzzyCMeans.getRuntime">[docs]</a>    <span class="k">def</span> <span class="nf">getRuntime</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Prints the total runtime of the clustering algorithm.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total Execution time of proposed Algorithm:&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">endTime</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">startTime</span><span class="p">,</span> <span class="s2">&quot;seconds&quot;</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="FuzzyCMeans.getMemoryUSS"><a class="viewcode-back" href="../../../geoanalytics.clustering.html#geoanalytics.clustering.FuzzyCMeans.FuzzyCMeans.getMemoryUSS">[docs]</a>    <span class="k">def</span> <span class="nf">getMemoryUSS</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="FuzzyCMeans.getMemoryUSS"><a class="viewcode-back" href="../../../clustering/clusteringFuzzyCMeans.html#geoanalytics.clustering.FuzzyCMeans.FuzzyCMeans.getMemoryUSS">[docs]</a>    <span class="k">def</span> <span class="nf">getMemoryUSS</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Prints the memory usage (USS) of the process in kilobytes.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Memory (USS) of proposed Algorithm in KB:&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">memoryUSS</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="FuzzyCMeans.getMemoryRSS"><a class="viewcode-back" href="../../../geoanalytics.clustering.html#geoanalytics.clustering.FuzzyCMeans.FuzzyCMeans.getMemoryRSS">[docs]</a>    <span class="k">def</span> <span class="nf">getMemoryRSS</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="FuzzyCMeans.getMemoryRSS"><a class="viewcode-back" href="../../../clustering/clusteringFuzzyCMeans.html#geoanalytics.clustering.FuzzyCMeans.FuzzyCMeans.getMemoryRSS">[docs]</a>    <span class="k">def</span> <span class="nf">getMemoryRSS</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Prints the memory usage (RSS) of the process in kilobytes.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Memory (RSS) of proposed Algorithm in KB:&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">memoryRSS</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="FuzzyCMeans.run"><a class="viewcode-back" href="../../../geoanalytics.clustering.html#geoanalytics.clustering.FuzzyCMeans.FuzzyCMeans.run">[docs]</a>    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_clusters</span><span class="o">=</span><span class="mi">4</span><span class="p">):</span>
+<div class="viewcode-block" id="FuzzyCMeans.run"><a class="viewcode-back" href="../../../clustering/clusteringFuzzyCMeans.html#geoanalytics.clustering.FuzzyCMeans.FuzzyCMeans.run">[docs]</a>    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_clusters</span><span class="o">=</span><span class="mi">4</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Performs fuzzy clustering on data.</span>
 
@@ -225,7 +225,7 @@
 
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">labelsDF</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">centers</span></div>
 
-<div class="viewcode-block" id="FuzzyCMeans.save"><a class="viewcode-back" href="../../../geoanalytics.clustering.html#geoanalytics.clustering.FuzzyCMeans.FuzzyCMeans.save">[docs]</a>    <span class="k">def</span> <span class="nf">save</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">outputFileLabels</span><span class="o">=</span><span class="s1">&#39;FuzzyCMeansLabels.csv&#39;</span><span class="p">,</span> <span class="n">outputFileCenters</span><span class="o">=</span><span class="s1">&#39;FuzzyCMeansCenters.csv&#39;</span><span class="p">):</span>
+<div class="viewcode-block" id="FuzzyCMeans.save"><a class="viewcode-back" href="../../../clustering/clusteringFuzzyCMeans.html#geoanalytics.clustering.FuzzyCMeans.FuzzyCMeans.save">[docs]</a>    <span class="k">def</span> <span class="nf">save</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">outputFileLabels</span><span class="o">=</span><span class="s1">&#39;FuzzyCMeansLabels.csv&#39;</span><span class="p">,</span> <span class="n">outputFileCenters</span><span class="o">=</span><span class="s1">&#39;FuzzyCMeansCenters.csv&#39;</span><span class="p">):</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">labelsDF</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
             <span class="k">try</span><span class="p">:</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">labelsDF</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">outputFileLabels</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>

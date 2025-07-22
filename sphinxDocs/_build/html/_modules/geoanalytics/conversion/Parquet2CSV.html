@@ -106,7 +106,7 @@
 <span class="kn">import</span> <span class="nn">psutil</span>
 <span class="kn">import</span> <span class="nn">time</span>
 
-<div class="viewcode-block" id="Parquet2CSV"><a class="viewcode-back" href="../../../geoanalytics.conversion.html#geoanalytics.conversion.Parquet2CSV.Parquet2CSV">[docs]</a><span class="k">class</span> <span class="nc">Parquet2CSV</span><span class="p">:</span>
+<div class="viewcode-block" id="Parquet2CSV"><a class="viewcode-back" href="../../../conversion/conversionParquet2CSV.html#geoanalytics.conversion.Parquet2CSV.Parquet2CSV">[docs]</a><span class="k">class</span> <span class="nc">Parquet2CSV</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        **About this algorithm**</span>
 
@@ -174,7 +174,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">memoryUSS</span> <span class="o">=</span> <span class="nb">float</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">memoryRSS</span> <span class="o">=</span> <span class="nb">float</span><span class="p">()</span>
 
-<div class="viewcode-block" id="Parquet2CSV.convert"><a class="viewcode-back" href="../../../geoanalytics.conversion.html#geoanalytics.conversion.Parquet2CSV.Parquet2CSV.convert">[docs]</a>    <span class="k">def</span> <span class="nf">convert</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="Parquet2CSV.convert"><a class="viewcode-back" href="../../../conversion/conversionParquet2CSV.html#geoanalytics.conversion.Parquet2CSV.Parquet2CSV.convert">[docs]</a>    <span class="k">def</span> <span class="nf">convert</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        This function converts the input Parquet file into a CSV file where each row is joined by the specified separator and written to the output file.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
@@ -192,7 +192,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">memoryUSS</span> <span class="o">=</span> <span class="n">process</span><span class="o">.</span><span class="n">memory_full_info</span><span class="p">()</span><span class="o">.</span><span class="n">uss</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">memoryRSS</span> <span class="o">=</span> <span class="n">process</span><span class="o">.</span><span class="n">memory_info</span><span class="p">()</span><span class="o">.</span><span class="n">rss</span></div>
 
-<div class="viewcode-block" id="Parquet2CSV.getMemoryUSS"><a class="viewcode-back" href="../../../geoanalytics.conversion.html#geoanalytics.conversion.Parquet2CSV.Parquet2CSV.getMemoryUSS">[docs]</a>    <span class="k">def</span> <span class="nf">getMemoryUSS</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="Parquet2CSV.getMemoryUSS"><a class="viewcode-back" href="../../../conversion/conversionParquet2CSV.html#geoanalytics.conversion.Parquet2CSV.Parquet2CSV.getMemoryUSS">[docs]</a>    <span class="k">def</span> <span class="nf">getMemoryUSS</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Returns the memory used by the process in USS (Unique Set Size).</span>
 
@@ -201,7 +201,7 @@
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">memoryUSS</span></div>
 
-<div class="viewcode-block" id="Parquet2CSV.getMemoryRSS"><a class="viewcode-back" href="../../../geoanalytics.conversion.html#geoanalytics.conversion.Parquet2CSV.Parquet2CSV.getMemoryRSS">[docs]</a>    <span class="k">def</span> <span class="nf">getMemoryRSS</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="Parquet2CSV.getMemoryRSS"><a class="viewcode-back" href="../../../conversion/conversionParquet2CSV.html#geoanalytics.conversion.Parquet2CSV.Parquet2CSV.getMemoryRSS">[docs]</a>    <span class="k">def</span> <span class="nf">getMemoryRSS</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Returns the memory used by the process in RSS (Resident Set Size).</span>
 
@@ -210,7 +210,7 @@
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">memoryRSS</span></div>
 
-<div class="viewcode-block" id="Parquet2CSV.getRuntime"><a class="viewcode-back" href="../../../geoanalytics.conversion.html#geoanalytics.conversion.Parquet2CSV.Parquet2CSV.getRuntime">[docs]</a>    <span class="k">def</span> <span class="nf">getRuntime</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="Parquet2CSV.getRuntime"><a class="viewcode-back" href="../../../conversion/conversionParquet2CSV.html#geoanalytics.conversion.Parquet2CSV.Parquet2CSV.getRuntime">[docs]</a>    <span class="k">def</span> <span class="nf">getRuntime</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Returns the time taken to complete the Parquet to CSV conversion.</span>
 
@@ -219,7 +219,7 @@
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">end</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">start</span></div>
 
-<div class="viewcode-block" id="Parquet2CSV.printStats"><a class="viewcode-back" href="../../../geoanalytics.conversion.html#geoanalytics.conversion.Parquet2CSV.Parquet2CSV.printStats">[docs]</a>    <span class="k">def</span> <span class="nf">printStats</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="Parquet2CSV.printStats"><a class="viewcode-back" href="../../../conversion/conversionParquet2CSV.html#geoanalytics.conversion.Parquet2CSV.Parquet2CSV.printStats">[docs]</a>    <span class="k">def</span> <span class="nf">printStats</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Prints the resource usage statistics including memory consumption (USS and RSS) and the runtime.</span>
 
