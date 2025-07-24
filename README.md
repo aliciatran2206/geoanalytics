@@ -24,8 +24,8 @@
 # Table of Contents
 
 - [Introduction](#introduction)
-- [Development process](#process-flow-chart)
-- [Inputs and outputs of a knowledge discovery algorithm](#inputs-and-outputs-of-an-algorithm-in-pami)
+- [Development process](#flow-chart-of-developing-algorithms-in-geoAnalytics)
+- [Inputs and outputs of a knowledge discovery algorithm](#inputs-and-outputs-of-an-algorithm-in-geoAnalytics)
 - [Recent updates](#recent-updates)
 - [Features](#features)
 - [Installing GDAL](#Installing-GDAL-Package)
